@@ -109,6 +109,7 @@
             </ul>
           </div>
         </nav>
+<!--        change colour-->
         <nav class="nav-menu nav-auth">
           <hidden point="xsDown">
             <div class="deco" />
@@ -138,7 +139,8 @@
 
 <script>
 import { inject } from 'vue';
-import logo from '@/assets/images/education-logo.svg';
+// import logo from '@/assets/images/education-logo.svg';
+import logo from '@/assets/images/PTA-Logo-Final.png';
 import link from '@/assets/text/link';
 import brand from '@/assets/text/brand';
 import navMenu from './menu';

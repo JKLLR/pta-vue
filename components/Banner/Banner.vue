@@ -6,19 +6,23 @@
           <div class="banner-text">
             <div class="title">
               <h3 class="use-text-title">
-                {{ $t('educationLanding.banner_title') }}
+               <small>{{ $t('educationLanding.banner_title') }} </small>
               </h3>
             </div>
-            <h5 class="subtitle">
-              {{ $t('educationLanding.banner_desc') }}
-            </h5>
+            <h6 class="subtitle">
+              <strong>{{ $t('educationLanding.banner_desc') }}</strong><br/>
+              <small style="font-size: 20px"> {{ $t('educationLanding.banner_desc2') }}</small>
+            </h6>
+            <!--            <h6 class="subtitle">-->
+            <!--              {{ $t('educationLanding.banner_desc2') }}-->
+            <!--            </h6>-->
             <v-card class="search-banner">
               <v-text-field
-                :label="$t('educationLanding.banner_search')"
-                class="search"
-                color="primary"
-                hide-details
-                variant="filled"
+                  :label="$t('educationLanding.banner_search')"
+                  class="search"
+                  color="primary"
+                  hide-details
+                  variant="filled"
               />
               <div class="action">
                 <v-btn icon variant="text" class="button" color="primary">
@@ -31,54 +35,54 @@
           </div>
         </v-col>
         <v-col
-          v-if="isTablet"
-          lg="6"
-          cols="12"
-          class="md-5 pa-6 deco-grid"
+            v-if="isTablet"
+            lg="6"
+            cols="12"
+            class="md-5 pa-6 deco-grid"
         >
           <div class="deco-banner">
             <div class="artwork-bg">
-              <div class="oval" />
+              <div class="oval"/>
               <div v-if="loaded" class="parallax-scene back">
                 <kinesis-container
-                  :duration="1500"
-                  easing="cubic-bezier(0.23, 1, 0.32, 1)"
+                    :duration="1500"
+                    easing="cubic-bezier(0.23, 1, 0.32, 1)"
                 >
                   <kinesis-element
-                    :strength="30"
-                    type="translate"
-                    tag="div"
+                      :strength="30"
+                      type="translate"
+                      tag="div"
                   >
-                    <span class="icon-three" />
+                    <span class="icon-three"/>
                   </kinesis-element>
                   <kinesis-element
-                    :strength="20"
-                    type="translate"
-                    tag="div"
+                      :strength="20"
+                      type="translate"
+                      tag="div"
                   >
-                    <span class="icon-four" />
+                    <span class="icon-four"/>
                   </kinesis-element>
                 </kinesis-container>
               </div>
               <img src="/images/education/banner-artwork.png" alt="artwork">
               <div v-if="loaded" class="parallax-scene front">
                 <kinesis-container
-                  :duration="1500"
-                  easing="cubic-bezier(0.23, 1, 0.32, 1)"
+                    :duration="1500"
+                    easing="cubic-bezier(0.23, 1, 0.32, 1)"
                 >
                   <kinesis-element
-                    :strength="10"
-                    type="translate"
-                    tag="div"
+                      :strength="10"
+                      type="translate"
+                      tag="div"
                   >
-                    <span class="icon-two" />
+                    <span class="icon-two"/>
                   </kinesis-element>
                   <kinesis-element
-                    :strength="15"
-                    type="translate"
-                    tag="div"
+                      :strength="15"
+                      type="translate"
+                      tag="div"
                   >
-                    <span class="icon-one" />
+                    <span class="icon-one"/>
                   </kinesis-element>
                 </kinesis-container>
               </div>
@@ -87,7 +91,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <div id="watched_counter" />
+    <div id="watched_counter"/>
   </div>
 </template>
 

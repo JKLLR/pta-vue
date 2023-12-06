@@ -31,11 +31,14 @@ $font-bold: var(--font-bold);
 
 // Theme color palette primary
 $palette-primary-main: rgb(var(--v-theme-primary));
+$palette-primary-main-green: #9FD650;
+$palette-primary-main-dark-blue: #002457;
 $palette-primary-light: rgb(var(--v-theme-primarylight));
 $palette-primary-dark: rgb(var(--v-theme-primarydark));
 
 // Theme color palette secondary
 $palette-secondary-main: rgb(var(--v-theme-secondary));
+$palette-secondary-main-green: #8CC643;
 $palette-secondary-light: rgb(var(--v-theme-secondarylight));
 $palette-secondary-dark: rgb(var(--v-theme-secondarydark));
 

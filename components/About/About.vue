@@ -7,13 +7,16 @@
             <hidden point="smDown">
               <div class="illustration one" />
               <figure class="illustration two">
-                <img :src="imgAPI.education[11]" alt="about">
+                <img :src="securityTextImage" alt="about">
               </figure>
               <figure class="illustration three">
-                <img :src="imgAPI.education[12]" alt="about">
+                <img :src="twoGuards" alt="about">
               </figure>
               <figure class="illustration four">
-                <img :src="imgAPI.education[13]" alt="about">
+                <img
+                    :src="twoGuards"
+                    alt="about"
+                >
               </figure>
               <div class="illustration five" />
             </hidden>
@@ -55,6 +58,9 @@ import AOS from 'aos';
 import imgAPI from '@/assets/images/imgAPI';
 import link from '@/assets/text/link';
 import Hidden from '../Hidden';
+import twoGuards from '@/assets/images/two-guards.jpg';
+import oneGuard from '@/assets/images/one-guard2.jpg';
+import securityTextImage from '@/assets/images/security-sign.jpg';
 
 export default {
   components: {
@@ -63,6 +69,9 @@ export default {
   data: () => ({
     imgAPI,
     link,
+    twoGuards,
+    oneGuard,
+    securityTextImage
   }),
   mounted() {
     this.loaded = true;

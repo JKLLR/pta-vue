@@ -1,6 +1,6 @@
 $flag: '/images/flag-logo.png';
 
-@mixin flag-icon{
+@mixin flag-icon {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -33,6 +33,7 @@ $flag: '/images/flag-logo.png';
 .popover {
   @include palette-background-paper;
   width: 200px;
+
   .v-list {
     border-radius: 0
   }
@@ -41,12 +42,15 @@ $flag: '/images/flag-logo.png';
 .switch-toggle {
   margin: spacing(-2, 2, 0);
   height: 24px;
+
   :deep(.v-switch__thumb) {
     color: $palette-secondary-main
   }
+
   :deep(.v-switch__track) {
     background-color: $palette-secondary-light
   }
+
   :deep(.v-selection-control) {
     justify-content: center;
   }
@@ -55,9 +59,11 @@ $flag: '/images/flag-logo.png';
 .flex-menu {
   display: flex;
   margin-top: $spacing1;
+
   label {
     padding-top: 8px
   }
+
   :deep(.v-messages) {
     display: none
   }
@@ -83,24 +89,30 @@ $flag: '/images/flag-logo.png';
   box-shadow: none;
   transition: all 0.3s ease;
   position: fixed;
+
   :deep(.v-toolbar__content) {
     height: auto !important
   }
+
   @include breakpoints-down(md) {
     z-index: 90
   }
+
   .v-container {
     padding-top: 0;
     padding-bottom: 0;
+
     #main-wrap & {
       @include breakpoints-down(sm) {
         padding: 0
       }
     }
   }
+
   nav {
     transition: all 0.5s ease-out;
   }
+
   &.fixed {
     position: fixed;
     top: 0;
@@ -108,16 +120,19 @@ $flag: '/images/flag-logo.png';
     padding: 4px 0;
     @include shadow5;
     @include palette-background-paper;
+
     .logo {
-      a span{
+      a span {
         display: none
       }
+
       img {
         height: 64px;
         width: 64px;
         margin: 0;
       }
     }
+
     .bar {
       @include breakpoints-down(sm) {
         @include palette-background-text-secondary;
@@ -126,30 +141,38 @@ $flag: '/images/flag-logo.png';
         }
       }
     }
+
     nav {
       padding: spacing(0.5, 0);
+
       ul li a {
         @include palette-text-primary
       }
     }
-    .nav-menu{
+
+    .nav-menu {
       padding: 14px 8px
     }
+
     .nav-auth {
       a {
         @include use-theme(color, $palette-primary-dark, $palette-primary-light)
       }
+
       .deco {
         display: none;
       }
     }
+
     :deep(.v-icon) {
       @include palette-text-secondary
     }
   }
+
   &.open-drawer {
     box-shadow: none !important;
     z-index: 1100 !important;
+
     .logo {
       a {
         @include palette-text-primary
@@ -165,6 +188,7 @@ $flag: '/images/flag-logo.png';
 .header-content {
   display: flex;
   align-items: flex-start;
+
   & nav {
     align-items: center;
     display: flex;
@@ -185,6 +209,7 @@ $flag: '/images/flag-logo.png';
 
 .logo {
   text-align: center;
+
   a {
     text-decoration: none;
     display: block;
@@ -195,6 +220,7 @@ $flag: '/images/flag-logo.png';
     font-weight: $font-regular;
     line-height: normal;
   }
+
   img {
     margin: 0 auto $spacing1;
     display: block;
@@ -206,7 +232,8 @@ $flag: '/images/flag-logo.png';
       width: 64px;
     }
   }
-  a span{
+
+  a span {
     @include breakpoints-down(sm) {
       display: none
     }
@@ -215,8 +242,9 @@ $flag: '/images/flag-logo.png';
 
 .nav-logo {
   padding: $spacing1;
+
   &.invert {
-    .logo a{
+    .logo a {
       @include palette-text-primary
     }
   }
@@ -224,24 +252,29 @@ $flag: '/images/flag-logo.png';
 
 .nav-menu {
   padding: spacing(3, 1);
+
   > * {
     margin: 0;
     @include breakpoints-up(lg) {
       margin: spacing(0, 1);
     }
   }
+
   &.invert {
     ul li a {
       transition: all 0.3s ease-out;
       @include palette-text-primary;
     }
+
     .icon.v-icon {
       @include palette-text-primary;
     }
   }
+
   .scrollactive-nav {
     list-style: none;
     @include padding-left($spacing6);
+
     li {
       @include breakpoints-up(lg) {
         margin: spacing(0, 1)
@@ -249,7 +282,8 @@ $flag: '/images/flag-logo.png';
       list-style: none;
       position: relative;
       display: inline-block;
-      .v-btn  {
+
+      .v-btn {
         border-radius: 0;
         font-size: 16px;
         font-weight: $font-medium;
@@ -260,13 +294,16 @@ $flag: '/images/flag-logo.png';
         margin: spacing(0, 1);
         min-width: 0;
         @include palette-text-primary;
+
         :deep(.v-btn__overlay) {
           opacity: 0;
         }
+
         .text {
           position: relative;
           z-index: 1;
         }
+
         &:before {
           content: '';
           height: 8px;
@@ -278,26 +315,32 @@ $flag: '/images/flag-logo.png';
           @include left(50%);
           transition: all 0.2s cubic-bezier(0.42, 0.16, 0.21, 0.93);
         }
+
         &:hover {
           transition: all 0.3s ease-out;
           @include palette-text-primary;
+
           &:after {
             opacity: 0
           }
+
           &:before {
             width: 80%;
             @include left(4px);
             @include use-theme(border-bottom-color, $palette-primary-main, $palette-primary-light);
           }
         }
+
         &.active {
           @include use-theme(color, $palette-primary-dark, $palette-primary-light);
+
           &:hover {
             &:before {
               width: 80%;
               @include left(4px);
             }
           }
+
           &:before {
             border-bottom-color: $palette-primary-light;
             width: 60%;
@@ -314,28 +357,36 @@ $flag: '/images/flag-logo.png';
   flex: 1;
   justify-content: flex-end;
   padding: 22px 24px 22px 0;
+
   .deco {
     width: 500px;
     height: 300px;
     border-radius: 40px;
-    @include use-theme(background-color, $palette-primary-main, $palette-primary-dark);
+    //@include use-theme(background-color, $palette-primary-main, $palette-primary-dark);
+    //background-color: rgb(138, 230, 138);;
+    background-color: #9FD650;
+    //background-color: lightgreen;
     transform: rotate(-10deg);
     position: absolute;
     @include right(-120px);
     top: -190px;
   }
+
   a {
     font-size: 16px;
     margin: spacing(0, 2);
+
     &.text-btn {
       background: none;
       padding-top: 4px !important;
       padding-bottom: 4px !important;
       color: $palette-common-white
     }
+
     &.white {
       border: 1px solid $palette-primary-main !important;
       color: $palette-primary-dark !important;
+
       :deep(.v-btn__content) {
         line-height: 21px;
       }
@@ -345,15 +396,19 @@ $flag: '/images/flag-logo.png';
 
 .lang-menu {
   text-transform: capitalize;
+
   .flag {
     margin: 0;
+
     & i {
       @include flag-icon;
     }
   }
+
   .lang-list {
     padding: 0;
-    .lang-opt{
+
+    .lang-opt {
       font-size: 0.875rem;
       @include margin-left($spacing2)
     }
@@ -386,9 +441,11 @@ $flag: '/images/flag-logo.png';
       color: $palette-common-white;
     }
   }
+
   .active {
     transform: rotate(30deg)
   }
+
   @include breakpoints-down(sm) {
     opacity: 0.5
   }
@@ -411,15 +468,19 @@ paper-nav {
 
 .mobile-menu {
   margin: spacing(0, 1);
+
   .bar {
     @include palette-background-text-secondary;
+
     &:after, &:before {
       @include palette-background-text-secondary;
     }
   }
+
   &.is-active {
     .bar {
       @include palette-background-text-secondary;
+
       &:after, &:before {
         @include palette-background-text-secondary;
       }
@@ -434,6 +495,7 @@ paper-nav {
   @include breakpoints-down(xs) {
     width: 100% !important
   }
+
   .menu {
     padding: $spacing2;
     overflow: auto;
@@ -444,9 +506,11 @@ paper-nav {
     @include breakpoints-down(sm) {
       top: $spacing10
     }
+
     a {
       @include palette-text-primary
     }
+
     .menu-list {
       text-transform: capitalize;
       font-size: 24px;
@@ -455,6 +519,7 @@ paper-nav {
       font-weight: $font-regular;
       padding: spacing(1, 0);
     }
+
     &.menu-open {
       a {
         animation-name: slideRight;

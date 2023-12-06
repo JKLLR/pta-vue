@@ -133,7 +133,7 @@ export default defineNuxtComponent({
   },
   head() {
     return {
-      title: brand.education.name + ' - Home Page',
+      title: brand.education.name + ' - PROTECTIVE TRAINING ACADEMY',
     };
   },
   computed: {
