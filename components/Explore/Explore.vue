@@ -94,27 +94,27 @@ export default {
       categoriesData: [
         {
           img: imgAPI.education[0],
-          title: 'Photography',
+          title: 'Security Supervision',
           desc: 'Nulla lobortis nunc vitae nisi semper semper.',
         },
         {
           img: imgAPI.education[4],
-          title: 'Artificial Intelligence',
+          title: 'Front Office Security',
           desc: 'Nulla lobortis nunc vitae nisi semper semper.',
         },
         {
           img: imgAPI.education[7],
-          title: 'Architect',
+          title: 'Fire and Safety',
           desc: 'Nulla lobortis nunc vitae nisi semper semper.',
         },
         {
           img: imgAPI.education[2],
-          title: 'Geography',
+          title: 'Basic First Aid',
           desc: 'Nulla lobortis nunc vitae nisi semper semper.',
         },
         {
           img: imgAPI.education[6],
-          title: 'Art',
+          title: 'VIP Protection',
           desc: 'Nulla lobortis nunc vitae nisi semper semper.',
         },
       ],

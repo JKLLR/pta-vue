@@ -3,7 +3,7 @@ const brand = {
     name: 'PTA',
     desc: 'Veluxi Education - Vue Single Landing Page Template',
     prefix: 'veluxi',
-    footerText: 'Education Theme 2023',
+    footerText: 'Designed and Developed by Jeff Huria',
     logoText: 'Veluxi Education',
     projectName: 'PTA',
     url: 'veluxi.ux-maestro.com/education',
