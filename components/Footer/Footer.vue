@@ -142,7 +142,7 @@ import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useSwitchLocalePath } from 'vue-i18n-routing';
 import { setRtl } from '@/composables/uiTheme';
-import logo from '@/assets/images/education-logo.svg';
+import logo from '@/assets/images/PTA-Logo-Final.png';
 import brand from '@/assets/text/brand';
 import { navigateTo } from '#app';
 

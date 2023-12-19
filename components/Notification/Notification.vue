@@ -27,7 +27,7 @@
 export default {
   data() {
     return {
-      snackbar: true,
+      snackbar: false,
     };
   },
 };

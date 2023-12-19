@@ -9,7 +9,7 @@
   }
   &:before {
     content: "";
-    @include use-theme(background, $palette-primary-main, $palette-primary-dark);
+    @include use-theme(background, $palette-primary-main-dark-blue, $palette-primary-dark);
     width: 80%;
     height: 100%;
     .v-locale--is-ltr & {

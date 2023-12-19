@@ -6,6 +6,7 @@
         <section id="home">
           <banner />
         </section>
+
         <section id="feature" class="space-top">
           <feature />
         </section>
@@ -28,6 +29,7 @@
           <subscribe-form />
         </section>
         <footer-main />
+
       </div>
       <hidden point="mdDown">
         <page-nav />
@@ -133,7 +135,7 @@ export default defineNuxtComponent({
   },
   head() {
     return {
-      title: brand.education.name + ' - Home Page',
+      title: brand.education.name + ' - PROTECTIVE TRAINING ACADEMY',
     };
   },
   computed: {

@@ -1,6 +1,6 @@
 $pattern: '/images/education/bg-pattern.png';
 .root {
-  background: url($pattern) repeat $palette-primary-dark;
+  background: url($pattern) repeat $palette-primary-main-dark-blue;
   background-size: 8%;
   position: relative;
   color: $palette-common-white;
@@ -100,5 +100,12 @@ $pattern: '/images/education/bg-pattern.png';
     height: 60px;
     bottom: -30px;
     @include right(10px);
+  }
+  &.six {
+    width: 210px;
+    height: 210px;
+    bottom: -30px;
+    @include left(250px);
+    left: 250px
   }
 }
